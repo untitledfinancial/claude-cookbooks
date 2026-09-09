@@ -7,6 +7,7 @@ DPX publishes a native MCP server (83 tools) so Claude can call settlement, comp
 ## What's Included
 
 * **[Autonomous Payment Agent Notebook](./autonomous_payment_agent.ipynb)** — A step-by-step tutorial showing how to build a Claude agent that autonomously executes a vendor payment: oracle gate → fee quote → AML/sanctions screen → on-chain settlement. Runs in sandbox mode — no real funds required.
+* **[Agent-to-Agent Invoice Notebook](./agent_to_agent_invoice.ipynb)** — Two independent Claude agents settle a real payment obligation between themselves: Agent A creates an invoice, Agent B verifies and pays it by ID — no shared credentials, no out-of-band coordination beyond the invoice ID itself. Runs in sandbox mode by default; includes the real on-chain receipt (tx hashes) from an actual mainnet run.
 
 ## How to Use This Cookbook
 
@@ -61,5 +62,5 @@ These endpoints require no authentication and no API key:
 
 * [DPX Docs](https://docs.untitledfinancial.com)
 * [For AI Builders](https://docs.untitledfinancial.com/guides/for-ai-builders) — task-oriented examples
-* [MCP Tools Reference](https://docs.untitledfinancial.com/integrations/mcp) — full 76-tool list
+* [MCP Tools Reference](https://docs.untitledfinancial.com/integrations/mcp) — full 83-tool list
 * [Multi-agent payments](https://docs.untitledfinancial.com/guides/multi-agent-payments) — orchestrator/sub-agent delegation
